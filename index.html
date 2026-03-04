@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>負けメモ</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>🎮 負けメモ</h1></header>
+  <form id="memoForm">
+    <label>自分の機体: <input type="text" id="myMecha" required maxlength="20"></label>
+    <label>相方機体: <input type="text" id="partner" maxlength="20"></label>
+    <label>対面1: <input type="text" id="opp1" maxlength="20"></label>
+    <label>対面2: <input type="text" id="opp2" maxlength="20"></label>
+    
+    <fieldset>
+      <legend>負け要因（複数OK）</legend>
+  
+      <label><input type="checkbox" value="操作ミス/練度不足"> 操作ミス/練度不足</label>
+      <label><input type="checkbox" value="覚醒ミス"> 覚醒ミス</label>
+      <label><input type="checkbox" value="対面機体の理解不足"> 対面機体の理解度不足</label>
+      <label><input type="checkbox" value="立ち回り悪"> 立ち回り悪</label>
+      <label><input type="checkbox" value="運悪" id="otherCb"> 運悪</label>
+      <label><input type="checkbox" value="蟹貴'sレッスン"> 蟹貴`sレッスン</label>
+      <label><input type="checkbox" value="その他" id="otherReasonCb"> その他
+        <input type="text" id="otherReason" placeholder="詳細" style="display:none; margin-left:10px;" maxlength="30">
+      </label>
+    </fieldset>
+    
+    <label>メモ（自由記述）:
+      <textarea id="memoText" rows="4" placeholder="反省点・気づき・次回の対策など" maxlength="500"></textarea>
+    </label>
+    
+    <button type="submit">💾 保存</button>
+  </form>
+
+  <section id="list"></section>
+
+  <!-- 詳細表示モーダル -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>詳細</h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');
+  </script>
+</body>
+</html>

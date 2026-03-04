@@ -1,0 +1,14 @@
+{
+  "name": "負けメモ",
+  "short_name": "負けメモ",
+  "description": "ゲーム負け時の機体・要因メモ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#2196F3",
+  "icons": [{
+    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iOTYiIGZpbGw9IiNGRkM0MDAiLz48dGV4dCB4PSI5NiIgeT0iMTA4IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzIiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7jga08L3RleHQ+PC9zdmc+",
+    "sizes": "192x192",
+    "type": "image/svg+xml"
+  }]
+}
