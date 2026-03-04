@@ -25,7 +25,8 @@ button[type=submit] { background: #4CAF50; color: white; border: none; padding: 
 .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
 .close:hover { color: black; }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   body { background: #121212; color: #eee; }
   .memo, .modal-content, .confirm-box { background: #1e1e1e; color: #eee; }
 }
+*/
